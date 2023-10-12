@@ -1,0 +1,15 @@
+{% extends 'EatingUsApp/base.html' %}
+
+{% load static %}
+
+{% block title %} Inicio {% endblock %}
+
+{% block main%}
+
+{% for nombre in nuevos_brunch %}
+
+<p>Nombre: {{nuevos_brunch.nombre}}</p>
+
+{% endfor %}
+
+{% endblock main%}
